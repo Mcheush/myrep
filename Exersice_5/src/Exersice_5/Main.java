@@ -32,7 +32,7 @@ public class Main {
         System.out.print("Введите число, которому не будет равен ни один из элеметов матрицы ");
         inputNum = sc.nextInt();
         boolean[] results = new boolean[xLen];
-        boolean res = false;
+        int stat = 0;
 
         for (int i = 0; i < xLen; i++) {
             for (int j = 0; j < lenY; j++) {
@@ -45,14 +45,19 @@ public class Main {
 
         for (int i = 0; i < xLen; i++) {
             if (results[i]) {
-                res = true;
-                System.out.println("Строка " +(i+1));
+                stat++;
             }
         }
 
-        if (!res) {
+        if (stat != 0) {
+            for (int i = 0; i < xLen; i++) {
+                if (!results[i]) {
+                    System.out.println("Строка " +(i+1));
+                }
+            }
+        }
+        else {
             System.out.println("Таких строк нет");
         }
-
     }
 }
