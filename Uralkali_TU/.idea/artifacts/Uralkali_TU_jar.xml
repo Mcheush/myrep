@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Uralkali_TU:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Uralkali_TU_jar</output-path>
+    <root id="archive" name="Uralkali_TU.jar">
+      <element id="module-output" name="Uralkali_TU" />
+    </root>
+  </artifact>
+</component>
