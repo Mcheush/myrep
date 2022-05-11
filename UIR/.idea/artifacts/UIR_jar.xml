@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="UIR:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UIR_jar</output-path>
+    <root id="archive" name="UIR.jar">
+      <element id="module-output" name="UIR" />
+    </root>
+  </artifact>
+</component>
